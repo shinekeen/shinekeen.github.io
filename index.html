@@ -99,18 +99,17 @@
 <p><strong>类似的还有神经网络</strong> 。<strong>神经网络</strong>也是 <strong>用无数多个神经元（函数）去逼近任意一个函数</strong> 。</p>
 <p><img src="D:\typoraImage\1730442598222.png" alt="1730442598222"></p>
 <ul>
-<li>定义：若函数 f(<strong>x</strong>) <strong>在包含 x0</strong> 的某个开区间(<strong>a</strong>,<strong>b</strong>)上具有(<strong>n</strong>+<strong>1</strong>)阶导数，那么对于任一x ∈(a , b)，有：</li>
+<li><p>定义：若函数 f(<strong>x</strong>) <strong>在包含 x0</strong> 的某个开区间(<strong>a</strong>,<strong>b</strong>)上具有(<strong>n</strong>+<strong>1</strong>)阶导数，那么对于任一x ∈(a , b)，有：</p>
+<script type="math/tex; mode=display">
+f(x)=f(x_{0})+\dfrac{f^{'}(x_{0})}{1!}(x-x_{0})++\dfrac{f^{"}(x_{0})}{2!}(x-x_{0})^{2}+...+\dfrac{f^{n}(x_{0})}{n!}(x-x_{0})^{n}+R_{n}(x)</script><script type="math/tex; mode=display">
+其中，Rn(x) 为余项</script></li>
 </ul>
-<pre><code>$$
-f(x)=f(x_&#123;0&#125;)+\dfrac&#123;f^&#123;&#39;&#125;(x_&#123;0&#125;)&#125;&#123;1!&#125;(x-x_&#123;0&#125;)++\dfrac&#123;f^&#123;&quot;&#125;(x_&#123;0&#125;)&#125;&#123;2!&#125;(x-x_&#123;0&#125;)^&#123;2&#125;+...+\dfrac&#123;f^&#123;n&#125;(x_&#123;0&#125;)&#125;&#123;n!&#125;(x-x_&#123;0&#125;)^&#123;n&#125;+R_&#123;n&#125;(x)
-$$
-其中，Rn(x) 为余项
-</code></pre><p><img src="D:\typoraImage\1730443904147.png" alt="1730443904147"></p>
+<p><img src="D:\typoraImage\1730443904147.png" alt="1730443904147"></p>
 <p><img src="D:\typoraImage\1730442546023.png" alt="1730442546023"></p>
 <ul>
 <li><p>为什么要展开：</p>
-<p>  a.方便求一些函数值，因为泰勒展开是多项式，而多项式的值一般都很好求，只要代入变量，就可求出因变量。而很多函数的函数值很难求，例如sinx，lnx这类的。</p>
-<p>  b.方便计算</p>
+<p>a.方便求一些函数值，因为泰勒展开是多项式，而多项式的值一般都很好求，只要代入变量，就可求出因变量。而很多函数的函数值很难求，例如sinx，lnx这类的。</p>
+<p>b.方便计算</p>
 </li>
 </ul>
 <h2 id="二、泰勒公式的余项"><a href="#二、泰勒公式的余项" class="headerlink" title="二、泰勒公式的余项"></a><strong>二、泰勒公式的余项</strong></h2><p>泰勒公式的余项有两类：</p>
@@ -129,16 +128,16 @@ $R_{n}(x)=\dfrac{f^{n+1}(\xi)}{(n+1)!}(x-a)^{n+1}$</script><p>其中，ξ 是介
 <p>两类余项区别:<br>    精确性 ：</p>
 <ol>
 <li>拉格朗日余项给出了误差的一个精确表达式，可以用来估计具体的误差大小。</li>
-<li>佩亚诺余项给出了误差的一个渐近行为，主要用于理论分析，不提供具体的误差数值。</li>
-</ol>
-<p>​    应用场景 ：</p>
-<ol>
-<li>拉格朗日余项适用于需要具体误差估计的情况，例如在数值计算中。</li>
-<li>佩亚诺余项适用于理论分析，特别是在证明某些极限或渐近性质时。</li>
-</ol>
-<p>​    数学形式 ：</p>
-<ol>
-<li>拉格朗日余项包含了一个未知的中间点 ξ，这使得它在实际应用中可能难以精确计算。</li>
+<li><p>佩亚诺余项给出了误差的一个渐近行为，主要用于理论分析，不提供具体的误差数值。</p>
+<p> 应用场景 ：</p>
+</li>
+<li><p>拉格朗日余项适用于需要具体误差估计的情况，例如在数值计算中。</p>
+</li>
+<li><p>佩亚诺余项适用于理论分析，特别是在证明某些极限或渐近性质时。</p>
+<p> 数学形式 ：</p>
+</li>
+<li><p>拉格朗日余项包含了一个未知的中间点 ξ，这使得它在实际应用中可能难以精确计算。</p>
+</li>
 <li>佩亚诺余项的形式更简洁，易于处理，但它的信息量较少。</li>
 </ol>
 <h2 id="三、应用"><a href="#三、应用" class="headerlink" title="三、应用"></a>三、应用</h2><pre><code>a.梯度下降法和一阶泰勒展开
@@ -155,7 +154,7 @@ $R_{n}(x)=\dfrac{f^{n+1}(\xi)}{(n+1)!}(x-a)^{n+1}$</script><p>其中，ξ 是介
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shinekeen.github.io/2024/11/05/%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80/" data-id="cm39rt8vg0001v4un94gq1czp" data-title="泰勒展开" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://shinekeen.github.io/2024/11/05/%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80/" data-id="cm39rzp9d0001ywunbqr0bqq9" data-title="泰勒展开" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -202,7 +201,7 @@ $R_{n}(x)=\dfrac{f^{n+1}(\xi)}{(n+1)!}(x-a)^{n+1}$</script><p>其中，ξ 是介
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shinekeen.github.io/2024/11/05/hello-world/" data-id="cm39rt8v40000v4un2obr1zmt" data-title="Welcome!" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://shinekeen.github.io/2024/11/05/hello-world/" data-id="cm39rzp8u0000ywun3sakgf2f" data-title="Welcome!" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
